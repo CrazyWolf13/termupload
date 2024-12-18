@@ -1,1 +1,3 @@
 uploads/
+app/src/.env
+app/src/tokens.db
