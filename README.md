@@ -1,46 +1,44 @@
-# Inhalt der Datei: /fastapi-file-upload/fastapi-file-upload/README.md
+# FastAPI file upload application
 
-# FastAPI Datei-Upload Anwendung
-
-Diese Anwendung ermöglicht das Hochladen von Dateien über eine FastAPI-Schnittstelle. Nach dem Hochladen einer Datei erhalten Sie eine URL, über die die Datei heruntergeladen werden kann.
+This application allows you to upload files via a FastAPI interface. After uploading a file, you will receive a URL via which the file can be downloaded.
 
 ## Installation
 
-1. Klonen Sie das Repository:
+1. clone the repository:
 
    ```
    git clone <repository-url>
    cd fastapi-file-upload
    ```
 
-2. Installieren Sie die Abhängigkeiten:
+2. install the dependencies:
 
    ```
    pip install -r requirements.txt
    ```
 
-## Nutzung
+## Utilisation
 
-1. Starten Sie die FastAPI-Anwendung:
+1. start the FastAPI application:
 
    ```
    uvicorn src.main:app --reload
    ```
 
-2. Verwenden Sie cURL, um eine Datei hochzuladen:
+2. use cURL to upload a file:
 
    ```
    curl -X POST "http://127.0.0.1:8000/upload" -F "file=@./file.txt"
    ```
 
-   Ersetzen Sie `./file.txt` durch den Pfad zu Ihrer Datei.
+   Replace `./file.txt` with the path to your file.
 
-3. Nach dem Hochladen erhalten Sie eine URL, unter der Sie die Datei herunterladen können.
+3. after uploading, you will receive a URL where you can download the file.
 
-## Endpunkte
+## Endpoints
 
-- `POST /upload`: Lädt eine Datei hoch und gibt eine URL zurück, um die Datei herunterzuladen.
+- `POST /upload`: Uploads a file and returns a URL to download the file.
 
-## Lizenz
+## Licence
 
-Dieses Projekt ist unter der MIT-Lizenz lizenziert.
+This project is licensed under the AGPL-3.0 license.
