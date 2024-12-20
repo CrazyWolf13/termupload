@@ -1,4 +1,4 @@
-# FastAPI file upload application
+# Termupload
 
 This application allows you to upload files via a FastAPI interface. After uploading a file, you will receive a URL via which the file can be downloaded.
 
