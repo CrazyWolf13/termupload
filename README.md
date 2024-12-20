@@ -7,8 +7,8 @@ This application allows you to upload files via a FastAPI interface. After uploa
 1. clone the repository:
 
    ```
-   git clone <repository-url>
-   cd fastapi-file-upload
+   git clone https://github.com/CrazyWolf13/termupload/edit
+   cd termupload/app
    ```
 
 2. install the dependencies:
@@ -22,7 +22,8 @@ This application allows you to upload files via a FastAPI interface. After uploa
 1. start the FastAPI application:
 
    ```
-   uvicorn src.main:app --reload
+   cd src
+   fastapi run main.py
    ```
 
 2. use cURL to upload a file:
